@@ -1,0 +1,13 @@
+type Transaction = record {
+  to: text;
+  amount: nat64;
+};
+
+type TransactionAnalysis = record {
+  is_safe: bool;
+  reason: text;
+};
+
+service : {
+  analyze_transaction: (Transaction) -> (TransactionAnalysis) query;
+};
