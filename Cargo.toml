@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/secure_transaction_assistant_backend"
+]
+resolver = "2"
